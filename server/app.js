@@ -5,7 +5,11 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import path from 'path';
 import logger from 'morgan';
-import apiRoutes from './routes/api';
+
+// [SH] Bring in the data model
+require('./config/db');
+
+const apiRoutes = require('./routes/api');
 
 const app = express();
 app.use(bodyParser.json());
