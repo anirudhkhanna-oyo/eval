@@ -7,7 +7,7 @@ import path from 'path';
 import logger from 'morgan';
 import apiRoutes from './routes/api';
 
-var app = express();
+const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());

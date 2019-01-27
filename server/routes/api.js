@@ -1,5 +1,6 @@
 import express from 'express';
-let router = express.Router();
+
+const router = express.Router();
 
 /* Ping */
 function ping(req, res) {
